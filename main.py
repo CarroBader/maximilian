@@ -60,6 +60,7 @@ def start_maximilian():
         print("20) Search in emission with country")
         print("21) Search in emission with year")
         print("22) Search in emission with year per capita")
+        print("23) Search in emission with year per area")
         print("q) Quit.")
 
         choice = input("--> ") 
@@ -151,6 +152,10 @@ def start_maximilian():
         # Choice 22-- Search in emission with year per capita
         elif choice == "22":
             emission_functions.search_year_capita()
+
+        # Choice 22-- Search in emission with year per area
+        elif choice == "23":
+            emission_functions.search_year_area()
 
             # Chice q -- Quit search_year() 
         elif choice == "q":
